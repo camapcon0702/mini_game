@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         btnEqual = findViewById(R.id.buttonEqual);
         btnMore = findViewById(R.id.buttonMore);
         btnLess = findViewById(R.id.buttonLess);
+
+        scoreInt = sharedPreferences.getInt("score", 100);
+        score.setText(String.valueOf(scoreInt));
     }
 
     public void addEvents() {
